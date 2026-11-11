@@ -5,6 +5,8 @@ Bài thực hành INT4211 – Lập trình trên các thiết bị di động, *
 bỏ phần nhập liệu ở đầu màn hình và thay bằng **options menu**, **context menu**,
 **hộp thoại tự thiết kế**, **AlertDialog xác nhận** và **Snackbar Hoàn tác**.
 
+Repo: https://github.com/nvquangggit-sys/A11_231A290134
+
 ## Chức năng
 
 - **Options menu** nạp từ `res/menu/menu_main.xml`, xử lý trong `onOptionsItemSelected`
