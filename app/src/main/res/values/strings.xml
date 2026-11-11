@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A11_231A290134</string>
+    <string name="title">Lab A11 – Thực đơn</string>
+    <string name="huong_dan">Chạm xem chi tiết · Giữ lâu Sửa/Xóa · ⋮ sắp xếp, lọc</string>
+    <string name="desc_anh">Ảnh món ăn</string>
+    <string name="danh_sach_trong">Thực đơn trống — dùng nút + để thêm món</string>
+    <string name="khong_tim_thay">Không tìm thấy món phù hợp</string>
+    <string name="them_mon">Thêm món</string>
+    <string name="sua_mon">Sửa món</string>
+    <string name="sap_xep_ten">Sắp xếp theo tên</string>
+    <string name="sap_xep_gia">Sắp xếp theo giá</string>
+    <string name="loc_gia">Lọc theo mức giá</string>
+    <string name="xoa_het">Xóa tất cả</string>
+    <string name="xoa">Xóa</string>
+    <string name="luu">Lưu</string>
+    <string name="huy">Hủy</string>
+    <string name="dong">Đóng</string>
+    <string name="hoan_tac">HOÀN TÁC</string>
+    <string name="hint_ten">Tên món</string>
+    <string name="hint_mo_ta">Mô tả ngắn</string>
+    <string name="hint_gia">Giá (đồng)</string>
+    <string name="hint_tim">Tìm món theo tên…</string>
+    <string name="xac_nhan_xoa">Xác nhận xóa</string>
+    <string name="hoi_xoa">Bạn có chắc muốn xóa \"%1$s\" khỏi thực đơn?</string>
+    <string name="hoi_xoa_het">Xóa toàn bộ %1$d món trong thực đơn?</string>
+    <string name="chi_tiet_format">%1$s\n\nGiá: %2$s</string>
+    <string name="da_them">Đã thêm món %1$s</string>
+    <string name="da_sua">Đã cập nhật món %1$s</string>
+    <string name="da_xoa">Đã xóa %1$s</string>
+    <string name="da_xoa_het">Đã xóa toàn bộ thực đơn</string>
+    <string name="da_sap_xep_ten">Đã sắp xếp theo tên</string>
+    <string name="da_sap_xep_gia">Đã sắp xếp theo giá tăng dần</string>
+    <string name="err_ten">Chưa nhập tên món</string>
+    <string name="err_gia">Giá phải là số</string>
+    <string name="err_gia_duong">Giá phải lớn hơn 0</string>
+    <string name="thong_ke">%1$d món · %2$s</string>
+    <string name="thong_ke_loc">Hiện %1$d/%2$d món · %3$s</string>
+    <string name="chon_muc_gia">Chọn mức giá</string>
+    <string name="ap_dung">Áp dụng</string>
+    <string name="da_loc_gia">Đã lọc theo mức giá: %1$s</string>
+    <string name="moi_them">Món mới thêm</string>
+
+    <!-- NC2: bốn lựa chọn cho hộp thoại setSingleChoiceItems -->
+    <string-array name="muc_gia">
+        <item>Tất cả mức giá</item>
+        <item>Dưới 30.000 đ</item>
+        <item>Từ 30.000 đ đến 45.000 đ</item>
+        <item>Trên 45.000 đ</item>
+    </string-array>
+</resources>
