@@ -73,9 +73,11 @@ app/src/main/res/menu/
 ├── menu_main.xml         # ＋, SearchView (NC1), 3 mục trong menu ba chấm
 └── menu_context.xml      # Sửa món / Xóa
 docs/
-├── screenshots/          # 13 ảnh minh chứng (8 kịch bản + NC1 + NC2)
+├── screenshots/          # 13 ảnh: 10 cho 8 kịch bản + 1 NC1 + 2 NC2
 ├── logs/logcat_a11.txt   # Logcat thật của TAG A11_231A290134
-└── A11_231A290134_demo.mp4
+├── A11_231A290134_demo.mp4          # Video demo 1 phút 02 giây
+├── BaoCao_LabA11_231A290134.docx    # Báo cáo (Word)
+└── BaoCao_LabA11_231A290134.pdf     # Báo cáo (PDF, 17 trang)
 ```
 
 ## Kịch bản kiểm thử (8 kịch bản của đề)
@@ -85,7 +87,7 @@ docs/
 | 1 | Mở app, nhìn thanh tiêu đề | Có biểu tượng ＋, kính lúp và nút ba chấm; 5 món mẫu, chip “5 món · 190.000 đ” | `a11_home.png` |
 | 2 | Mở menu ba chấm | Đủ Sắp xếp theo tên / Sắp xếp theo giá / Lọc theo mức giá / Xóa tất cả | `a11_menu.png` |
 | 3 | Chọn Sắp xếp theo giá | Danh sách xếp tăng dần 25 → 30 → 40 → 45 → 50 (nghìn), Toast “Đã sắp xếp theo giá tăng dần” | `a11_sort_toast.png` |
-| 4 | Giữ lâu dòng thứ 3 (Cơm tấm sườn) | Context menu hiện, tiêu đề đúng “Cơm tấm sườn”, có Sửa món / Xóa | `a11_ctx2.png` |
+| 4 | Giữ lâu dòng thứ 3 (Cơm tấm sườn) | Context menu hiện, tiêu đề đúng “Cơm tấm sườn”, có Sửa món / Xóa | `a11_ctx.png` |
 | 5 | Chọn Xóa trong context menu | Hộp thoại “Xác nhận xóa” nêu đúng tên: `Bạn có chắc muốn xóa "Cơm tấm sườn" khỏi thực đơn?` | `a11_confirm.png` |
 | 6 | Bấm Hủy trong hộp thoại | Không xóa gì, danh sách vẫn đủ 5 món · 190.000 đ | `a11_huy.png` |
 | 7 | Bấm Xóa rồi bấm HOÀN TÁC | Còn 4 món + Snackbar “Đã xóa Cơm tấm sườn”; Hoàn tác đưa món về **đúng vị trí thứ 3** | `a11_snackbar.png`, `a11_undo.png` |
@@ -93,6 +95,10 @@ docs/
 
 Ảnh của bài nâng cao: `a11_search.png` (NC1 — gõ `bun` còn 1/5 món),
 `a11_gia_dialog.png` + `a11_gia_loc.png` (NC2 — chọn “Trên 45.000 đ” rồi Áp dụng).
+
+> Ghi chú về ảnh: trong nhiều ảnh, dòng “Bún chả Hà Nội” (50.000 đ) có nền vàng nhạt vì
+> adapter tô nền cho món giá **trên 45.000 đ** — đây là hiệu ứng giữ lại từ Lab A9, không
+> phải dòng đang được chọn.
 
 Logcat thật (`docs/logs/logcat_a11.txt`, TAG `A11_231A290134`) xác nhận đúng vị trí dòng:
 
@@ -111,7 +117,7 @@ Sắp xếp theo giá → giữ lâu **Sửa** (xem hộp thoại điền sẵn)
 ## Báo cáo
 
 Báo cáo Word/PDF đầy đủ (bảng 8 kịch bản kèm ảnh, 3 câu hỏi phân tích, mô tả NC1–NC3,
-câu hỏi ôn tập) được nộp kèm bài dưới tên `BaoCao_LabA11_231A290134.docx` / `.pdf`.
+câu hỏi ôn tập) nằm trong `docs/BaoCao_LabA11_231A290134.docx` / `.pdf` (17 trang).
 
 ## Nguồn ảnh
 
