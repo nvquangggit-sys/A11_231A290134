@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <!-- Thanh tiêu đề: nơi options menu (nút +, kính lúp, ⋮) xuất hiện -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/title"
+        app:titleTextColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/noiDung"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/huong_dan"
+                android:textColor="@color/text_muted"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <!-- Tổng số món và tổng giá trị thực đơn -->
+            <TextView
+                android:id="@+id/tvThongKe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_stats"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/primary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:divider="@color/divider"
+            android:dividerHeight="1dp"
+            android:scrollbars="vertical" />
+
+        <!-- View hiển thị thay thế khi danh sách rỗng (setEmptyView) -->
+        <TextView
+            android:id="@+id/tvTrong"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/danh_sach_trong"
+            android:textColor="@color/text_muted"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

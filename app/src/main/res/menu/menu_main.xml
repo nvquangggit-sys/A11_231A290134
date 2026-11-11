@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/menu/menu_main.xml – menu của cả màn hình -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- always: luôn hiện thành biểu tượng trên thanh tiêu đề -->
+    <item
+        android:id="@+id/action_them"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/them_mon"
+        app:showAsAction="always" />
+
+    <!-- NC1: SearchView thu gọn thành biểu tượng kính lúp, chạm để mở rộng -->
+    <item
+        android:id="@+id/action_tim_kiem"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/hint_tim"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <!-- never: nằm trong menu ba chấm -->
+    <item
+        android:id="@+id/action_sap_xep_ten"
+        android:title="@string/sap_xep_ten"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sap_xep_gia"
+        android:title="@string/sap_xep_gia"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_loc_gia"
+        android:title="@string/loc_gia"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_xoa_het"
+        android:title="@string/xoa_het"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/menu/menu_context.xml – menu khi giữ lâu một dòng -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ctx_sua"
+        android:title="@string/sua_mon" />
+    <item
+        android:id="@+id/ctx_xoa"
+        android:title="@string/xoa" />
+</menu>
